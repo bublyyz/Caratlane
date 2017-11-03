@@ -4,7 +4,7 @@ import generic.BasePage;
 
 public class HomePage extends BasePage{
 	
-	@FindBy(xpath="")
+	//@FindBy(xpath="")
 	
 
 }
