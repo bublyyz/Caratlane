@@ -31,6 +31,9 @@ public class Trial {
 		actions.moveToElement(menu).perform();		
 	
 		driver.findElement(By.linkText("Gold Earrings")).click();
+		
+		driver.findElement(By.linkText("Rs.5001 To Rs.10000")).click();
+		
 		//driver.findElement(By.xpath("//div/div[@class='close']")).click();
 		
 		driver.close();

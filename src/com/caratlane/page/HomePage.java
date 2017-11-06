@@ -15,16 +15,29 @@ public class HomePage extends BasePage{
 	@FindBy(xpath="//a/span[.='GOLD JEWELLERY']")
 	private WebElement GJmenu;
 	
+	@FindBy(xpath="//li[2]/a[.='Gold Earrings']")
+	private WebElement Gearrings;
+
+	
 	
 	public HomePage(WebDriver driver){
 		PageFactory.initElements(driver, this);
 		this.driver=driver;
 	}
 	
+		
 	public void hoverGJmenu(){
 		Actions actions=new Actions(driver);
 		actions.moveToElement(GJmenu).perform();				
 	}
+	
+	public void clickGearrings()
+	{
+		Gearrings.click();
+	}
+	
+	
+
 	
 }
 	
